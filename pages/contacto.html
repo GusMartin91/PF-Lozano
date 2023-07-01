@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Proyecto Final Gustavo Lozano</title>
+
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <!-- DataTables -->
+    <link rel="stylesheet" type="text/css" href="../assets/datatables/dataTables.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/bootstrap-5.3.0/css/bootstrap.min.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient p-3 navbar-fixed-top">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="logo mecanico auto" width="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html"><i class="fa-regular fa-screwdriver-wrench"></i> Servicios<b>  |  </b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manuales.html"><i class="fa-regular fa-book"></i> Manuales<b>  |  </b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreNosotros.html"><i class="fa-regular fa-address-card"></i> Sobre Nosotros<b>  |  </b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="fa-regular fa-paper-plane"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="text-center">Proyecto Final - Gustavo Lozano</h1>
+        <h2 class="text-center"><i class="fa-regular fa-screwdriver-wrench"></i> Lubricentro CoderH <i class="fa-regular fa-screwdriver-wrench"></i></h2>
+        <h3 class="text-center">Contacta a nuestro equipo</h3>
+
+        <section>
+            <div class="form1">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="contenedor_inputs">
+                        <div class="nombre">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input autofocus type="text" name="nombre" id="nombre" class="form-control" onkeyup="mayus(this);">
+                        </div>
+                        <div class="apellido">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control" onkeyup="mayus(this);">
+                        </div>
+                        <div class="email">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="marca">
+                            <label for="marca" class="form-label">Marca de Auto:</label>
+                            <select name="marca" id="marca" class="form-select">
+                                <option value="" selected disabled hidden>Seleccionar...</option>
+                                <option value="1">Peugeot</option>
+                                <option value="2">Fiat</option>
+                                <option value="3">Volkswagen</option>
+                                <option value="4">Renault</option>
+                                <option value="5">Citroen</option>
+                                <option value="6">Ford</option>
+                                <option value="7">Chevrolet</option>
+                                <option value="8">Nissan</option>
+                                <option value="9">Toyota</option>
+                                <option value="10">Otros</option>
+                            </select>
+                        </div>
+                        <div class="mensaje">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea rows="4" name="mensaje" id="mensaje" class="form-control"></textarea>
+                        </div>
+                    </div>
+                        <div class="form-footer contenedor_form_footer">
+                            <button type="reset" class="btn btn-dark btn-sm" title="Resetear"><i class="fa-regular fa-arrows-rotate"></i></button>  
+                            <button type="submit" class="btn btn-dark btn-sm"><i class="fa-regular fa-paper-plane"></i> Enviar Formulario</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-content bg-gradient fixed-bottom">
+        <div class="col-6">
+            <p>Copyright &copy; 2023 | <a href="sobreNosotros.html">Sobre Nosotros</a></p>
+        </div>
+        <div class="col-6">
+            <ul class="redes">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="../assets/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables --><!-- donde tengo incluido el jQuery para que me ande el boton hamburguesa, entre otros. -->
+    <script type="text/javascript" charset="utf8" src="../assets/datatables/dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="../assets/datatables/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/funciones.js"></script>
+
+</body>
+</html>
