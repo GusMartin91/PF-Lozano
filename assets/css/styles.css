@@ -1,0 +1,440 @@
+@charset "UTF-8";
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  display: flex;
+  position: relative;
+  padding-bottom: 4.5em;
+  flex-direction: column;
+}
+
+h6.card-title {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #ff724b;
+}
+
+.btn {
+  color: #ff724b;
+}
+
+b {
+  color: rgb(229, 229, 229);
+}
+
+.navlink {
+  color: rgb(229, 229, 229);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav a i {
+  color: rgb(229, 229, 229);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  color: rgb(229, 229, 229);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1rem;
+}
+.footer-content p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 28px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: rgb(229, 229, 229);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+.redes li {
+  margin: 0 10px;
+}
+.redes a {
+  text-decoration: none;
+  color: rgb(229, 229, 229);
+  border: 1.1px solid rgb(229, 229, 229);
+  padding: 5px;
+  border-radius: 50%;
+}
+.redes a i {
+  font-size: 1.1rem;
+  width: 20px;
+  color: #ff724b;
+  transition: color 0.4s ease;
+}
+.redes a i:hover {
+  color: aqua;
+}
+
+/* Desde aca el Main del home */
+.contenedor-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagen1 breve";
+  gap: 10px;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.breve {
+  grid-area: breve;
+}
+
+.imagen1 {
+  display: grid;
+  grid-area: imagen1;
+  margin: 0 auto;
+  justify-items: center;
+}
+.imagen1 img {
+  object-fit: contain;
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .contenedor-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen1" "breve";
+  }
+}
+/* Hasta aca el Main del home */
+/* Cards Servicios */
+.sec-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-cards-servicios {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  background-color: #ff724b;
+  width: 98%;
+  padding: 10px 10px 10px 10px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+}
+
+.Cambio_Aceite {
+  grid-area: Cambio_Aceite;
+}
+
+.Aditivos {
+  grid-area: Aditivos;
+}
+
+.Transmision {
+  grid-area: Transmision;
+}
+
+.Engrase {
+  grid-area: Engrase;
+}
+
+.Limpieza {
+  grid-area: Limpieza;
+}
+
+.Filtros {
+  grid-area: Filtros;
+}
+
+.Fluidos {
+  grid-area: Fluidos;
+}
+
+.Seguridad {
+  grid-area: Seguridad;
+}
+
+.Baterias {
+  grid-area: Baterias;
+}
+
+.Cosmetica {
+  grid-area: Cosmetica;
+}
+
+@media (max-width: 576px) {
+  .contenedor-cards-servicios {
+    grid-template-columns: 1fr;
+    grid-template-areas: "Cambio_Aceite" "Aditivos" "Transmision" "Engrase" "Limpieza" "Filtros" "Fluidos" "Seguridad" "Baterias" "Cosmetica";
+  }
+}
+@media (max-width: 802px) and (min-width: 576px) {
+  .contenedor-cards-servicios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Cambio_Aceite Aditivos" "Transmision Engrase" "Limpieza Filtros" "Fluidos Seguridad" "Baterias Cosmetica";
+  }
+}
+@media (min-width: 802px) {
+  .contenedor-cards-servicios {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "Cambio_Aceite Aditivos Transmision Engrase Limpieza" "Filtros Fluidos Seguridad Baterias Cosmetica";
+  }
+}
+/* Hasta aca Cards Servicios */
+/* Cards Manuales */
+.sec-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-cards-manuales {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  background-color: #ff724b;
+  width: 98%;
+  padding: 10px 10px 10px 10px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+}
+
+.Peugeot {
+  grid-area: Peugeot;
+}
+
+.Fiat {
+  grid-area: Fiat;
+}
+
+.Volkswagen {
+  grid-area: Volkswagen;
+}
+
+.Renault {
+  grid-area: Renault;
+}
+
+.Citroen {
+  grid-area: Citroen;
+}
+
+.Ford {
+  grid-area: Ford;
+}
+
+.Chevrolet {
+  grid-area: Chevrolet;
+}
+
+.Nissan {
+  grid-area: Nissan;
+}
+
+.Toyota {
+  grid-area: Toyota;
+}
+
+.Otra_Marca {
+  grid-area: Otra_Marca;
+}
+
+@media (max-width: 576px) {
+  .contenedor-cards-manuales {
+    grid-template-columns: 1fr;
+    grid-template-areas: "Peugeot" "Fiat" "Volkswagen" "Renault" "Citroen" "Ford" "Chevrolet" "Nissan" "Toyota" "Otra_Marca";
+  }
+}
+@media (max-width: 802px) and (min-width: 576px) {
+  .contenedor-cards-manuales {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Peugeot Fiat" "Volkswagen Renault" "Citroen Ford" "Chevrolet Nissan" "Toyota Otra_Marca";
+  }
+}
+@media (min-width: 802px) {
+  .contenedor-cards-manuales {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "Peugeot Fiat Volkswagen Renault Citroen" "Ford Chevrolet Nissan Toyota Otra_Marca";
+  }
+}
+/* Hasta aca Cards Manuales */
+/* caja contenedora sobre_nosotros */
+.delimitador {
+  display: grid;
+  gap: 10px;
+  background-color: #ff724b;
+  align-items: center;
+  height: auto;
+}
+
+.contenedor1,
+.contenedor2,
+.contenedor3 {
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contenedor1 {
+  grid-area: cont1;
+  padding-top: 5px;
+  justify-self: center;
+}
+
+.contenedor2 {
+  grid-area: cont2;
+}
+
+.contenedor3 {
+  grid-area: cont3;
+}
+
+.video-responsive,
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* Proporción de aspecto 16:9 (9 dividido por 16 = 0.5625 o 56.25%) */
+}
+.video-responsive iframe,
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .delimitador {
+    grid-template-columns: 1fr;
+    grid-template-areas: "cont1" "cont2" "cont3";
+  }
+  .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .delimitador {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "cont1 cont2" "cont1 cont3";
+  }
+}
+@media (min-width: 768px) {
+  .delimitador {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "cont1 cont2 cont3";
+  }
+}
+/* Hasta aca la caja contenedora sobre_nosotros */
+/* Acomodando Inputs del Formulario de Contacto */
+.form1 {
+  width: 60%;
+  margin: 0px auto;
+  background-color: #ff724b;
+  border-radius: 15px;
+  border: 2px solid #ff501f;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.contenedor_inputs {
+  display: grid;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.apellido {
+  grid-area: apellido;
+}
+
+.email {
+  grid-area: email;
+}
+
+.marca {
+  grid-area: marca;
+}
+
+.mensaje {
+  grid-area: mensaje;
+}
+
+.contenedor_form_footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .form1 {
+    width: 80%;
+  }
+  .contenedor_inputs {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "nombre" "apellido" "email" "marca" "mensaje" "mensaje";
+  }
+}
+@media (min-width: 576px) {
+  .contenedor_inputs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "nombre apellido" "email marca" "mensaje mensaje" "mensaje mensaje";
+    gap: 10px;
+  }
+}
+/* Hasta aca el Formulario de Contacto */
+
+/*# sourceMappingURL=styles.css.map */
