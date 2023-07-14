@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -10,6 +9,7 @@ body {
   flex-direction: column;
 }
 
+/* header */
 h6.card-title {
   font-weight: bold;
 }
@@ -48,101 +48,6 @@ b {
   color: rgb(229, 229, 229);
 }
 
-/* Footer */
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #111;
-  height: auto;
-  width: 100%;
-  color: rgb(229, 229, 229);
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.footer-content h3 {
-  font-size: 1.8rem;
-  font-weight: 200;
-  line-height: 1rem;
-}
-.footer-content p {
-  max-width: 700px;
-  margin: auto;
-  line-height: 28px;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: rgb(229, 229, 229);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.redes {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 1rem 0;
-}
-.redes li {
-  margin: 0 10px;
-}
-.redes a {
-  text-decoration: none;
-  color: rgb(229, 229, 229);
-  border: 1.1px solid rgb(229, 229, 229);
-  padding: 5px;
-  border-radius: 50%;
-}
-.redes a i {
-  font-size: 1.1rem;
-  width: 20px;
-  color: #ff724b;
-  transition: color 0.4s ease;
-}
-.redes a i:hover {
-  color: aqua;
-}
-
-/* Desde aca el Main del home */
-.contenedor-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "imagen1 breve";
-  gap: 10px;
-  margin: 10px auto;
-  width: 95%;
-}
-
-.breve {
-  grid-area: breve;
-}
-
-.imagen1 {
-  display: grid;
-  grid-area: imagen1;
-  margin: 0 auto;
-  justify-items: center;
-}
-.imagen1 img {
-  object-fit: contain;
-  width: 70%;
-}
-
-@media (max-width: 576px) {
-  .contenedor-main {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imagen1" "breve";
-  }
-}
-/* Hasta aca el Main del home */
 /* Cards Servicios */
 .sec-cards {
   display: flex;
@@ -305,6 +210,40 @@ footer {
   }
 }
 /* Hasta aca Cards Manuales */
+/* Desde aca el Main del home */
+.contenedor-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagen1 breve";
+  gap: 10px;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.breve {
+  grid-area: breve;
+}
+
+.imagen1 {
+  display: grid;
+  grid-area: imagen1;
+  margin: 0 auto;
+  justify-items: center;
+}
+.imagen1 img {
+  object-fit: contain;
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .contenedor-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen1" "breve";
+  }
+}
+/* Hasta aca el Main del home */
 /* caja contenedora sobre_nosotros */
 .delimitador {
   display: grid;
@@ -340,7 +279,7 @@ footer {
 .map-responsive {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; /* Proporción de aspecto 16:9 (9 dividido por 16 = 0.5625 o 56.25%) */
+  padding-top: 56.25%;
 }
 .video-responsive iframe,
 .map-responsive iframe {
@@ -436,5 +375,65 @@ footer {
   }
 }
 /* Hasta aca el Formulario de Contacto */
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  color: rgb(229, 229, 229);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1rem;
+}
+.footer-content p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 28px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: rgb(229, 229, 229);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+.redes li {
+  margin: 0 10px;
+}
+.redes a {
+  text-decoration: none;
+  color: rgb(229, 229, 229);
+  border: 1.1px solid rgb(229, 229, 229);
+  padding: 5px;
+  border-radius: 50%;
+}
+.redes a i {
+  font-size: 1.1rem;
+  width: 20px;
+  color: #ff724b;
+  transition: color 0.4s ease;
+}
+.redes a i:hover {
+  color: aqua;
+}
 
 /*# sourceMappingURL=styles.css.map */

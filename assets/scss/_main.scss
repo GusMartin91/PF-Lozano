@@ -1,0 +1,189 @@
+/* Desde aca el Main del home */
+.contenedor-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "imagen1 breve";
+    gap: 10px;
+    margin: 10px auto;
+    width: 95%;
+}
+
+.breve {
+    grid-area: breve;
+}
+.imagen1{
+	display: grid;
+	grid-area: imagen1;
+	margin: 0 auto;
+	justify-items: center;
+    img {
+        object-fit: contain;
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+	.contenedor-main {		
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"imagen1"
+			"breve";
+	}
+}
+/* Hasta aca el Main del home */
+
+/* caja contenedora sobre_nosotros */
+.delimitador {	
+	display: grid;
+	gap: 10px;
+	background-color: #ff724b;
+	align-items: center;
+	height: auto;
+}
+
+.contenedor1,
+.contenedor2,
+.contenedor3 {
+	max-width: 100%;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.contenedor1 {
+	grid-area: cont1;
+	padding-top: 5px;
+	justify-self: center;
+}
+
+.contenedor2 {
+	grid-area: cont2;
+}
+
+.contenedor3 {
+	grid-area: cont3;
+}
+
+.video-responsive,
+.map-responsive {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+	.delimitador {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"cont1"
+		"cont2"
+		"cont3";
+		}
+	.line-clamp {
+		display: -webkit-box;
+		-webkit-line-clamp: 7;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}	
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	.delimitador {
+		grid-template-columns: 1fr 1fr ;
+		grid-template-areas:
+			"cont1 cont2"
+			"cont1 cont3";
+	}
+}
+
+@media (min-width: 768px) {
+	.delimitador {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"cont1 cont2 cont3";
+	}
+}
+/* Hasta aca la caja contenedora sobre_nosotros */
+
+/* Acomodando Inputs del Formulario de Contacto */
+
+.form1 {
+	width: 60%;
+	margin: 0px auto;
+	background-color: #ff724b;
+	border-radius: 15px;
+	border: 2px solid #ff501f;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.contenedor_inputs{
+	display: grid;
+}
+
+.nombre{
+	grid-area: nombre;
+}
+
+.apellido{
+	grid-area: apellido;
+}
+
+.email{
+	grid-area: email;
+}
+
+.marca{
+	grid-area: marca;
+}
+
+.mensaje{
+	grid-area: mensaje;
+}
+
+.contenedor_form_footer {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 10px;
+}
+
+@media (max-width: 576px) {
+	
+	.form1 {
+		width: 80%;
+	}
+	.contenedor_inputs {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-areas:
+		"nombre"
+		"apellido"
+		"email"
+		"marca"
+		"mensaje"
+		"mensaje";
+	}
+}
+
+@media (min-width: 576px) {
+	.contenedor_inputs {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas:
+		"nombre apellido"
+		"email marca"
+		"mensaje mensaje"
+		"mensaje mensaje";
+		gap: 10px;
+	}
+}
+/* Hasta aca el Formulario de Contacto */

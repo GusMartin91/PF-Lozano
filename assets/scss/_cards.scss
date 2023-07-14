@@ -1,0 +1,174 @@
+/* Cards Servicios */
+.sec-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contenedor-cards-servicios {
+	display: grid;
+	gap: 10px;
+	justify-content: center;
+	background-color: #ff724b;
+	width: 98%;
+    padding: 10px 10px 10px 10px;
+}
+.card{
+	width: 100%;
+	height: auto;
+}
+.Cambio_Aceite{
+	grid-area: Cambio_Aceite;
+}
+.Aditivos{
+	grid-area: Aditivos;
+}
+.Transmision{
+	grid-area: Transmision;
+}
+.Engrase{
+	grid-area: Engrase;
+}
+.Limpieza{
+	grid-area: Limpieza;
+}
+.Filtros{
+	grid-area: Filtros;
+}
+.Fluidos{
+	grid-area: Fluidos;
+}
+.Seguridad{
+	grid-area: Seguridad;
+}
+.Baterias{
+	grid-area: Baterias;
+}
+.Cosmetica{
+	grid-area: Cosmetica;
+}
+@media (max-width: 576px) {
+	.contenedor-cards-servicios {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"Cambio_Aceite"
+		"Aditivos"
+		"Transmision"
+		"Engrase"
+		"Limpieza"
+		"Filtros"
+		"Fluidos"
+		"Seguridad"
+		"Baterias"
+		"Cosmetica";
+	}
+}
+
+@media (max-width: 802px) and (min-width: 576px) {
+	.contenedor-cards-servicios {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"Cambio_Aceite Aditivos"
+		"Transmision Engrase"
+		"Limpieza Filtros"
+		"Fluidos Seguridad"
+		"Baterias Cosmetica";
+	}
+}
+
+@media (min-width: 802px) {
+	.contenedor-cards-servicios {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-areas: 
+		"Cambio_Aceite Aditivos Transmision Engrase Limpieza"
+		"Filtros Fluidos Seguridad Baterias Cosmetica";
+	}
+}
+/* Hasta aca Cards Servicios */
+/* Cards Manuales */
+.sec-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.contenedor-cards-manuales {
+	display: grid;
+	gap: 10px;
+	justify-content: center;
+	background-color: #ff724b;
+	width: 98%;
+    padding: 10px 10px 10px 10px;
+}
+.card{
+	width: 100%;
+	height: auto;
+}
+.Peugeot{
+	grid-area: Peugeot;
+}
+.Fiat{
+	grid-area: Fiat;
+}
+.Volkswagen{
+	grid-area: Volkswagen;
+}
+.Renault{
+	grid-area: Renault;
+}
+.Citroen{
+	grid-area: Citroen;
+}
+.Ford{
+	grid-area: Ford;
+}
+.Chevrolet{
+	grid-area: Chevrolet;
+}
+.Nissan{
+	grid-area: Nissan;
+}
+.Toyota{
+	grid-area: Toyota;
+}
+.Otra_Marca{
+	grid-area: Otra_Marca;
+}
+@media (max-width: 576px) {
+	.contenedor-cards-manuales {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"Peugeot"
+		"Fiat"
+		"Volkswagen"
+		"Renault"
+		"Citroen"
+		"Ford"
+		"Chevrolet"
+		"Nissan"
+		"Toyota"
+		"Otra_Marca";
+	}
+}
+
+@media (max-width: 802px) and (min-width: 576px) {
+	.contenedor-cards-manuales {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"Peugeot Fiat"
+		"Volkswagen Renault"
+		"Citroen Ford"
+		"Chevrolet Nissan"
+		"Toyota Otra_Marca";
+	}
+}
+
+@media (min-width: 802px) {
+	.contenedor-cards-manuales {
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-areas: 
+		"Peugeot Fiat Volkswagen Renault Citroen"
+		"Ford Chevrolet Nissan Toyota Otra_Marca";
+	}
+}
+/* Hasta aca Cards Manuales */
