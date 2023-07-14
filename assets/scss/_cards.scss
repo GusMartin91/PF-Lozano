@@ -17,36 +17,13 @@
 	width: 100%;
 	height: auto;
 }
-.Cambio_Aceite{
-	grid-area: Cambio_Aceite;
+
+@each $i in Cambio_Aceite, Aditivos, Transmision, Engrase, Limpieza, Filtros, Fluidos, Seguridad, Baterias, Cosmetica{
+	.#{$i}{
+		grid-area: #{$i};
+	}
 }
-.Aditivos{
-	grid-area: Aditivos;
-}
-.Transmision{
-	grid-area: Transmision;
-}
-.Engrase{
-	grid-area: Engrase;
-}
-.Limpieza{
-	grid-area: Limpieza;
-}
-.Filtros{
-	grid-area: Filtros;
-}
-.Fluidos{
-	grid-area: Fluidos;
-}
-.Seguridad{
-	grid-area: Seguridad;
-}
-.Baterias{
-	grid-area: Baterias;
-}
-.Cosmetica{
-	grid-area: Cosmetica;
-}
+
 @media (max-width: 576px) {
 	.contenedor-cards-servicios {
 		grid-template-columns: 1fr;
@@ -100,40 +77,12 @@
 	width: 98%;
     padding: 10px 10px 10px 10px;
 }
-.card{
-	width: 100%;
-	height: auto;
+@each $i in Peugeot, Fiat, Volkswagen, Renault, Citroen, Ford, Chevrolet, Nissan, Toyota, Otra_Marca{
+	.#{$i}{
+		grid-area: #{$i};
+	}
 }
-.Peugeot{
-	grid-area: Peugeot;
-}
-.Fiat{
-	grid-area: Fiat;
-}
-.Volkswagen{
-	grid-area: Volkswagen;
-}
-.Renault{
-	grid-area: Renault;
-}
-.Citroen{
-	grid-area: Citroen;
-}
-.Ford{
-	grid-area: Ford;
-}
-.Chevrolet{
-	grid-area: Chevrolet;
-}
-.Nissan{
-	grid-area: Nissan;
-}
-.Toyota{
-	grid-area: Toyota;
-}
-.Otra_Marca{
-	grid-area: Otra_Marca;
-}
+
 @media (max-width: 576px) {
 	.contenedor-cards-manuales {
 		grid-template-columns: 1fr;
