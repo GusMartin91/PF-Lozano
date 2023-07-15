@@ -14,12 +14,28 @@ h6.card-title {
   font-weight: bold;
 }
 
+.img-home {
+  width: 80px;
+  height: 52px;
+  transition: width 1s;
+}
+.img-home:hover {
+  width: 110px;
+}
+
+/* INTENTO DE MIXIN */
 h1 {
   font-size: 1.9rem;
+}
+h1:hover {
+  color: #ff724b;
 }
 
 h2 {
   font-size: 1.6rem;
+}
+h2:hover {
+  color: #ff724b;
 }
 
 h3 {
@@ -42,6 +58,10 @@ b {
 .navlink {
   color: rgb(229, 229, 229);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(rgb(162, 162, 162), black);
 }
 
 .navbar-nav a i {
@@ -229,6 +249,10 @@ b {
 .imagen1 img {
   object-fit: contain;
   width: 70%;
+  transition: width 1s;
+}
+.imagen1 img:hover {
+  width: 80%;
 }
 
 @media (max-width: 576px) {
@@ -325,6 +349,7 @@ b {
   display: grid;
 }
 
+/* INTENTO DE MAP */
 .nombre {
   grid-area: nombre;
 }
@@ -380,6 +405,7 @@ footer {
   height: auto;
   width: 100%;
   color: rgb(229, 229, 229);
+  background: linear-gradient(rgb(103, 103, 103), black);
 }
 
 .footer-content {

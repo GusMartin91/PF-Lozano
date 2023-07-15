@@ -21,6 +21,10 @@
     img {
         object-fit: contain;
         width: 70%;
+		transition: width 1s;
+		&:hover{
+			width: 80%;
+		}
     }
 }
 
@@ -129,25 +133,18 @@
 .contenedor_inputs{
 	display: grid;
 }
-
-.nombre{
-	grid-area: nombre;
-}
-
-.apellido{
-	grid-area: apellido;
-}
-
-.email{
-	grid-area: email;
-}
-
-.marca{
-	grid-area: marca;
-}
-
-.mensaje{
-	grid-area: mensaje;
+/* INTENTO DE MAP */
+$datos-formulario:(
+	nombre: nombre,
+	apellido: apellido,
+	email: email,
+	marca: marca,
+	mensaje: mensaje
+);
+@each $dato-formulario, $dato in $datos-formulario {
+	.#{$dato-formulario}{
+		grid-area: $dato;
+	}
 }
 
 .contenedor_form_footer {
