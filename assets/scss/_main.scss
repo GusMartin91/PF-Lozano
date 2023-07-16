@@ -12,14 +12,21 @@
 
 .breve {
     grid-area: breve;
+	p{
+		font-size: 20px;
+	}
 }
 .imagen1{
 	display: grid;
 	grid-area: imagen1;
 	margin: 0 auto;
 	justify-items: center;
+	a{
+		display: grid;
+	}
     img {
         object-fit: contain;
+		justify-self: center;
         width: 70%;
 		transition: width 1s;
 		&:hover{

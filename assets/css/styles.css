@@ -64,6 +64,17 @@ b {
   background: linear-gradient(rgb(162, 162, 162), black);
 }
 
+.navbar-nav a {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.navbar-nav a:hover {
+  color: #fe744e;
+  font-size: 22px;
+  border: 1px solid rgba(178, 155, 149, 0.4666666667);
+  border-radius: 50%;
+  background: rgba(93, 75, 75, 0.505);
+}
 .navbar-nav a i {
   color: rgb(229, 229, 229);
 }
@@ -239,6 +250,9 @@ b {
 .breve {
   grid-area: breve;
 }
+.breve p {
+  font-size: 20px;
+}
 
 .imagen1 {
   display: grid;
@@ -246,8 +260,12 @@ b {
   margin: 0 auto;
   justify-items: center;
 }
+.imagen1 a {
+  display: grid;
+}
 .imagen1 img {
   object-fit: contain;
+  justify-self: center;
   width: 70%;
   transition: width 1s;
 }

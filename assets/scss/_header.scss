@@ -51,6 +51,19 @@ b {
 .navbar {
 	background: linear-gradient(rgb(162, 162, 162), black);
 }
-.navbar-nav a i {	
-	color: rgb(229, 229, 229);
+.navbar-nav {
+	a {	
+		font-size: 20px;
+		transition: .5s;
+		&:hover{
+			color: #fe744e;
+			font-size: 22px;
+			border: 1px solid #b29b9577;
+			border-radius: 50%;
+			background: rgba(93, 75, 75, 0.505);
+		}
+		i	{
+		color: rgb(229, 229, 229);		
+		}
+	}
 }
