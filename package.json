@@ -1,12 +1,11 @@
 {
-  "name": "preentrega3lozano",
+  "name": "proyecto-final-lozano",
   "version": "1.0.0",
+  "description": "Proyecto Final - Lozano",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "description": ""
+  "license": "ISC"
 }
